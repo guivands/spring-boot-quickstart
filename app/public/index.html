@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://localhost:3030/css/main.css" rel="stylesheet"/>
+     <link rel="stylesheet" type="text/css" href="http://localhost:3030/css/font-awesome.min.css">
+        <link href="http://localhost:3030/css/reset.css" rel="stylesheet"/>
+     
+
+   <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+   <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+    <script src="http://localhost:3030//js/main.js"></script>
+    <script src="http://localhost:3030//js/record.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLFphJvAnHema1Tjx1XSHY8UCnCDBxjRE"></script>
+    <script src=".http://localhost:3030//js/jquery-move.js"></script>
+     <script src="http://localhost:3030//js/jquery-mask.js"></script>
+     <script src="http://localhost:3030//js/ua-parse.js"></script>
+</head>
+<body>
+    
+    <section id="poupchat">
+     <div class="top-chat row">
+         <div class="beta"></div>
+         <img class="img-vivo-chat col-md-4" src="http://localhost:3030/img/vivologo1.png">
+         <img class="img-vivo-direcao col-md-4" src="http://localhost:3030/img/draggable.png">
+         <a href="#" class="icon-chat-1">
+           <div class="col-md-1 top-seta"></div>
+         </a>
+          <a href="#" class="icon-chat-2">
+            <div class="col-md-1 top-seta-1"></div> 
+         </a>
+     </div>
+     <div class="poupchat-vivo">
+         <div class="avatar">
+         </div>
+
+         <div id="tel">
+             <span><p><a class="informacao"></a> Olá, eu sou a Vivi, a Assistente Virtual da Vivo.<p>
+                <p> Estou aqui para ajudá-lo com suas dúvidas. Basta escrever
+                     uma pergunta, que eu ofereço algumas opções de resposta. 
+                     Depois, é só clicar em uma das opções que aparecem e seguir
+                      as orientações.</p>
+
+                   <p>Vamos começar?<p>
+
+                  <p>Se preferir, informe seu número de telefone com DDD ou
+                       clique em iniciar</p>.</span>
+              <input type="text" class="input-everis" placeholder="Escreva seu DDD + telefone">
+              <input type="button"  class="button-everis" value="Iniciar">         
+         </div>
+         <div id="chat" style="display:none">
+             <div class="scroll-everis">
+                 <div><p class="texto-vivi"><a class='informacao'></a> <span class="texto-watson">Vivi</span></p>
+                 <span class="resposta-vivi">Qual é a sua duvida ?</span> 
+                 </div>
+                 
+            
+              
+              </div>
+               <input type="text" id="texto" placeholder="Escreva sua pergunta">
+              <input type="button" id="enviar" class="button-everis" value="Enviar">         
+        </div>
+       
+         <div class="row" style="width: 100%;height: 33px;">
+             <div class="icon-move-dow col-md-8"></div>
+            <div class="font-everis">
+                 <span>Powered by</span><a href="http://www.everis.com/" style="text-decoration: none;color: #0066df;"> Everis </a></div>
+          </div>
+     </div>
+    
+     <div class="poup-intent" style="display: none">
+         <span class="icon-x"><i class="fa fa-times" aria-hidden="true"></i></span>
+          <div class="scroll-poup" draggable="false">
+             
+           </div>
+           <div id='seta' class="seta-poup"></div>
+     </div>
+    
+      <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+    </section>
+     <a href="javascript:void(0)" class="assistent" style="display:none"></a>
+     <section class="satisfacao" style="display:none">
+         <div class="titulo-satisfacao">
+                <span class="titulo-texto">Pesquisa de Satisfação</span><span class="icon-satis"><i class="fa fa-times" aria-hidden="true"></i></span>
+         </div>
+         <div id="satisfacao">
+             <div class="pergunta-satisfacao">
+               <span class="titulo-texto">Como você avalia o atendimento da Vivi ?</span> 
+               <div class="resposta-satisfacao">
+                 <input type="radio" name="satisf" value="4" class="resposta-satisfacao-input" checked> <span class="font-satisfacao-check">Muito Bom</span>
+                 <input type="radio" name="satisf" value="3" class="resposta-satisfacao-input"> <span class="font-satisfacao-check">Bom</span>
+                 <input type="radio" name="satisf" value="2" class="resposta-satisfacao-input"><span class="font-satisfacao-check">Regular</span>
+                 <input type="radio" name="satisf" value="1" class="resposta-satisfacao-input"> <span class="font-satisfacao-check">Ruim</span>
+              </div>
+             </div>
+
+          <div class="pergunta-satisfacao">
+               <span class="titulo-texto">Suas duvidas foram solucionadas ?</span> 
+                 <div class="resposta-satisfacao">
+                   <input type="radio" name="seguin" value="SIM" class="resposta-satisfacao-input" checked> <span class="font-satisfacao-check">Sim</span>
+                   <input type="radio" name="seguin" value="NAO" class="resposta-satisfacao-input"> <span class="font-satisfacao-check">Não</span>
+                  </div>
+             </div>
+             <input type="button" id="button-satisfacao" class="button-satisfacao" value="Seguinte">
+         </div>
+         <div id="feedback-satisfacao" style="display:none">
+                <div class="pergunta-satisfacao">
+                    Caso você não tenha gostado do atendimento, deixe o seu comentário. O atendimento virtual é um 
+                    projeto novo e a sua opinião é essencial para que ele evolua
+                </div>
+                  <div class="resposta-satisfacao">
+                      <textarea class="texto-area-satisfacao"></textarea>
+                 </div>
+                 <div class="enviar-ultima">
+                    <input type="button" id="button-satisfacao-enviar" class="ultima-button-satisfacao " value="Enviar">
+                    <input type="button" id="button-satisfacao-atras" class="ultima-button-satisfacao " value="Voltar">
+                 </div>
+        </div>
+     </section>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div> 
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+ <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+   
+</body>
+</html>

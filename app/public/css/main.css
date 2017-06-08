@@ -1,0 +1,498 @@
+﻿
+p {
+    margin-bottom: 7px;
+    margin-top: -2px;
+}
+
+.top-chat .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#poupchat {
+    z-index: 9999;
+    position: fixed !important;
+    width: 335px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 4px 12px 51px 10px rgba(128, 128, 128, 0.34);
+    padding: 13px 8px 13px 8px;
+    display: none;
+    height: 610px;
+    top:21px;
+}
+
+
+
+.img-vivo-chat {
+    width: 59px;
+    margin-left: 10px;
+}
+
+ .img-vivo-direcao {
+    width: 34px;
+    margin-left: 86px;
+    margin-top: 0px;
+    position: absolute;
+    cursor: move;
+}
+
+.top-seta {
+    background-image: url(../img/min-icon.png);
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 37px;
+}
+
+
+.top-seta-1{
+  background-image: url("../img/close-icon.png");
+     width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 37px;
+}
+
+.icon-chat-1 {
+    background: #0066cb;
+    border-radius: 5px;
+    position: absolute;
+    right: 57px;
+    top: 14px;
+}
+
+.icon-chat-2 {
+     background: #0066cb;
+       border-radius: 5px;
+    position: absolute;
+    right: 31px;
+    top: 14px;
+}
+
+.poupchat-vivo {
+    background: #f1f1f1;
+    height: 539px;
+    margin-top: 20px;
+    padding: 11px;
+    width: 318px;
+}
+
+.xvivo {
+    background-image: url(../img/close.png);
+    height: 24px;
+    width: 12px;
+    background-size: 100%;
+    margin-top: 1px;
+    background-repeat: no-repeat;
+}
+.avatar {
+    background-color: #f7f7f7;
+    background-image: url(../img/avatarVivo.png);
+    background-repeat: no-repeat;
+    height: 238px;
+    border-radius: 6px;
+    background-size: 112%;
+    background-position-x: 4px;
+    background-position-y: -31px;
+}
+
+.imgex {
+    background-image: url(../img/close-icon.png);
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+    background-size: 100%;
+}
+
+.beta {
+    background-image: url(../img/vivoBeta.png);
+    background-repeat: no-repeat;
+    height: 103px;
+    position: absolute;
+    width: 100px;
+    top: 51px;;
+    left: 14px;
+    background-size: 88%;
+}
+
+#tel {
+    background: #e8f5fb;
+    padding: 12px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+    font-size: 13px;
+    margin-top: 8px;
+    color: #545454;
+    border-radius: 6px;
+    line-height: 15px;
+}
+
+.informacao {
+    background-image: url(../img/avIcon2.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding-left: 4px;
+    display: inline-block;
+    height: 22px;
+    width: 15px;
+    background-size: 100%;
+    margin-right: 6px;
+    font-size: 25px;
+}
+
+.input-everis {
+    width: 203px;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 9px;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-radius: 4px 0 0 4px;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    margin-left: -11px;
+    line-height: 20px;
+}
+
+.button-everis {
+    width: 74px;
+    height: 44.2px;
+    font-size: 15px;
+    background: #0066df;
+    color: white;
+    border-radius: 0 7px 5px 0;
+    padding: 1px 13px 1px 13px;
+    margin-left: -10px;
+}
+
+.scroll-everis {
+    overflow: auto;
+    height: 178px;
+    background: white;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    padding: 8px 6px 17px 23px;
+    border-radius: 8px;
+}
+
+.texto-vivi {
+    font-size: 12px;
+    color: #762999;
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}   
+
+.resposta-vivi {
+    font-size: 13px;
+    margin-left: 3px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+}
+
+.texto-watson {
+    position: relative;
+    top: -6px;
+    color: #0066df;
+    font-size: 13px;
+    margin-left: -3px;
+}
+
+.icon-user {
+    background-image: url(../img/avIconUser.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding-left: 4px;
+    display: inline-block;
+    height: 22px;
+    width: 20px;
+}
+
+.texto-user {
+    font-size: 12px;
+    margin-left: 0px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+    color: rgb(0, 138, 179);
+    position: relative;
+    top: -6px;
+}
+
+.resposta-user{
+
+  font-size: 13px;
+    margin-left: 3px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+        color: gray;
+
+}
+#texto {
+    width: 212px;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-radius: 4px 0 0 4px;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    margin-left: 6px;
+    padding: 13px;
+}
+
+#lis-poup {
+    color: #195fa1;
+    margin-left: 14px;
+    text-decoration: blink;
+    display: block !important;
+}
+
+.poup-intent0 {
+      position: absolute;
+    width: 352px;
+    background: white;
+    margin-top: -575px;
+    margin-left: -376px;
+    border: 2px solid rgba(128, 128, 128, 0.38);
+    box-shadow: 0px 1px 13px 2px grey;
+    border-radius: 11px;
+        top: 710px
+}
+.poup-intent1 {
+       position: absolute;
+    width: 352px;
+    background: white;
+    margin-top: -575px;
+    margin-left: -376px;
+    border: 2px solid rgba(128, 128, 128, 0.38);
+    box-shadow: 0px 1px 13px 2px grey;
+    border-radius: 11px;
+      top: 746px;
+}
+.poup-intent2 {
+       position: absolute;
+    width: 352px;
+    background: white;
+    margin-top: -575px;
+    margin-left: -376px;
+    border: 2px solid rgba(128, 128, 128, 0.38);
+    box-shadow: 0px 1px 13px 2px grey;
+    border-radius: 11px;
+     top: 786px;
+}
+
+.scroll-poup0 {
+    height: 258px;
+    overflow: auto;
+    margin-top: 28px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+    width: 90%;
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+}
+
+.scroll-poup1 {
+    height: 258px;
+    overflow: auto;
+    margin-top: 28px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+    width: 90%;
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+}
+.scroll-poup2 {
+    height: 258px;
+    overflow: auto;
+    margin-top: 28px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+    width: 90%;
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+}
+
+.icon-x {
+    font-size: 15px;
+    position: absolute;
+    right: 9px;
+    top: 7px;
+    color: #10628A;
+}
+
+.icon-x:hover{
+
+    opacity: 0.6;
+}
+
+
+.assistent {
+    background-image: url(../img/openChatV2.png);
+    background-repeat: no-repeat;
+    width: 194px;
+    height: 174px;
+    position: absolute;
+    right: 0px;
+    background-size: 100%;
+    z-index: 999;
+    opacity: 1;
+    position: fixed !important;
+}
+
+.icon-move-dow {
+    background-image: url(../img/draggable.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 35px;
+    height: 34px;
+    position: absolute;
+    left: 157px;
+    margin-top: 7px;
+    cursor: move;
+}
+
+.font-everis {
+    position: absolute;
+    right: 35px;
+    bottom: 28px;
+    font-size: 11px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+    color: #0066df;
+}
+
+.satisfacao {
+    width: 615px;
+    background: white;
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    box-shadow: 33px 35px 61px 1px rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+    position: fixed !important;
+}
+
+.titulo-satisfacao {
+    padding: 28px;
+    font-size: 24px;
+    background: #195ea0;
+    color: white;
+}
+
+.titulo-texto{
+ font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+
+}
+
+.icon-satis {
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 22px;
+}
+
+.icon-satis:hover{
+    opacity: 0.7;
+}
+
+.pergunta-satisfacao {
+    padding: 16px;
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+.resposta-satisfacao {
+    margin-top: 21px;
+    font-size: 27px;
+}
+
+ .resposta-satisfacao-input{
+        zoom: 1;
+ }
+
+.font-satisfacao-check {
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.button-satisfacao {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 69%;
+    width: 130px;
+    font-size: 17px;
+    padding: 8px;
+    background: #195ea0;
+    color: white;
+    border-radius: 9px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+}
+
+#feedback-satisfacao {
+    width: 100%;
+    height: 368px;
+}
+
+.texto-area-satisfacao {
+    width: 488px;
+    margin-left: 51px;
+    height: 148px;
+    font-size: 16px;
+}
+
+.ultima-button-satisfacao {
+    position: relative;
+    margin-top: 0px;
+    width: 84px;
+    font-size: 17px;
+    padding: 9px;
+    background: #195ea0;
+    color: white;
+    border-radius: 9px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+}
+
+.enviar-ultima {
+    margin-left: 407px;
+    margin-top: 22px;
+}
+.seta-poup:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    /* margin-right: 10px; */
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 16px solid rgba(113, 111, 111, 0.53);
+    right: -17px;
+    position: absolute;
+    box-shadow: 0px 1px 13px 2px rgba(128, 128, 128, 0);
+    bottom: 19px;
+}
+#seta{
+  font: 14px sans-serif;
+  display: block;
+  padding-top: 10px;
+
+}
+
+ .margin-top5px {
+    margin-top: 13px;
+}
+
+
+.obrigado {
+    width: 100%;
+    height: 260px;
+    color: black;
+    padding: 31px;
+    font-size: 23px;
+}

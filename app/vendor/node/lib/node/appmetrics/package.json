@@ -1,0 +1,32 @@
+{
+  "author": "",
+  "bin": {
+    "node-hc": "bin/appmetrics-cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/RuntimeTools/appmetrics/issues"
+  },
+  "bundledDependencies": [
+    "jszip", "pako"
+  ],
+  "dependencies": {
+    "jszip": "2.5.x"
+  },
+  "description": "Node Application Metrics",
+  "directories": {
+    "lib": "lib",
+    "probes": "probes"
+  },
+  "homepage": "https://github.com/RuntimeTools/appmetrics#readme",
+  "license": "Apache-2.0 and proprietary",
+  "name": "appmetrics",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RuntimeTools/appmetrics.git"
+  },
+  "scripts": {
+    "test": "tap --reporter tap tests/api_tests.js"
+  },
+  "version": "1.2.0"
+}
